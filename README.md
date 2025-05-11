@@ -21,7 +21,8 @@ This repository presents a comprehensive solution for **optimizing marketing inv
 │   ├── Supply_Chain_KPIs.ipynb                 # KPI's
 │   ├── Market_Mix_Modelling.R                  # Meta's Robyn MMM Implementation
 │   ├── Market_Mix_Optimization_Framework.ipynb # Novel Optimization Model (MISOCP)
-├── data.txt                                    # Contains links to raw and processed datasets
+├── Problem Statement.pdf                       # Probelm Statement
+├── Data.txt                                    # Contains links to raw and processed datasets
 ├── Report.pdf                                  # Detailed methodology, results & business strategy
 ```
 
@@ -65,11 +66,11 @@ NOTE:- Refer `Report.pdf` for more comprehensive idea of our approach.
 - Channel dependency & volatility using Herfindahl-Hirschman Index  
 - Risk-stratified budget bounding (Low to Very High Risk channels)
 
-### 3. 📈 Marketing Mix Modelling for budget allocation (Benchmark for our novel approach
+### 3. 📈 Marketing Mix Modelling for budget allocation (Benchmark for our novel approach)
 - Used Meta’s **Robyn** (SOTA MMM tool) in R  
 - Daily spend interpolation, spline smoothing, ridge regression, saturation effects
 
-### 4. 🧮 Our Novel Optimization Framework for optimal budget allocation, target product category and indicating best marketing channel
+### 4. 🧮 Our Novel Optimization Framework for optimal budget allocation, finding target product category and indicating best marketing channel
 - Custom-built Mixed-Integer SOCP model using **Gurobi**  
 - Multi-dimensional constraints (budget limits, risk factors, spend shifts) decided based on EDA and Risk Analysis 
 
