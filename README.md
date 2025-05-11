@@ -1,4 +1,4 @@
-# 📊 ElectroMart Marketing Optimization – General Championship - Data Analytics'25 - IIT Kharagpur
+# General Championship - Data Analytics'25 - IIT Kharagpur
 
 ## 🏆 Award: Second Runner-Up  
 ### 🏁 Organized by: **Technology Students' Gymkhana IIT Kharagpur**  
@@ -12,9 +12,7 @@ This repository presents a comprehensive solution for **optimizing marketing inv
 
 ---
 
-## 📌 Problem Statement
-
-ElectroMart had major marketing expenditures last year. The CFO wants to understand:
+## 📌 Deliverbales Required
 
 - What drove revenue (Performance Driver Analysis)?
 - How much did each marketing lever contribute (Marketing ROI)?
@@ -24,7 +22,7 @@ ElectroMart had major marketing expenditures last year. The CFO wants to underst
 
 ---
 
-## 🎯 Business Objectives Solved
+## 🎯 Our Solutions
 
 - 📈 **Performance Driver Analysis**: Identifying KPIs that drive top-line revenue.
 - 💸 **Marketing ROI Quantification**: Estimating the causal impact of different commercial levers using SHAP & CatBoost.
@@ -45,3 +43,94 @@ ElectroMart had major marketing expenditures last year. The CFO wants to underst
 ├── Market_Mix_Optimization_Framework.ipynb      # Novel Optimization Model (MISOCP)
 ├── data.txt                                     # Contains links to raw and processed datasets
 ├── Report.pdf                                   # Detailed methodology, results & business strategy
+'''
+## 🧠 Approach & Methodology
+
+### 1. 📊 EDA & Impact Analysis
+- GMV trend, discount-revenue patterns, order fluctuations  
+- Weather data integration via Meteostat API  
+- SHAP + CatBoost for lag-based feature contribution analysis
+
+### 2. ⚠️ Risk Modeling
+- Channel dependency & volatility using Herfindahl-Hirschman Index  
+- Risk-stratified budget bounding (Low to Very High Risk channels)
+
+### 3. 📈 Marketing Mix Modelling
+- Used Meta’s **Robyn** (SOTA MMM tool) in R  
+- Daily spend interpolation, spline smoothing, ridge regression, saturation effects
+
+### 4. 🧮 Optimization Framework
+- Custom-built Mixed-Integer SOCP model using **Gurobi**  
+- Multi-dimensional constraints (budget limits, risk factors, spend shifts)  
+- Incorporated response coefficients from Robyn & internal benchmarks
+
+### 5. 🔁 XGBoost Segment Analysis
+- Per-product channel effectiveness evaluated using feature importance  
+- Provided channel-level strategy recommendations
+
+---
+
+## 🧠 Key Insights
+
+- 📉 High ROI channels (TV, Digital) were under-invested relative to their impact  
+- 📊 Over-concentration on SEM & Sponsorship posed revenue risk  
+- 📦 Supply chain inefficiencies (SLA delays) majorly impacted CLTV  
+- 📈 Proposed reallocation improved projected GMV by **>20%** with **lower risk exposure**
+
+---
+
+## 🛠️ Tech Stack
+
+- **Languages**: Python, R  
+- **Libraries**: Pandas, Seaborn, SHAP, XGBoost, GurobiPy, Robyn  
+- **Tools**: Jupyter, Google Colab, Git, GitHub  
+- **APIs**: Meteostat (Weather Integration)
+
+---
+
+## 📎 Data Sources
+
+- Consumer Orders (FSN ID, GMV, Delivery SLA, Units Sold)  
+- SKU Metadata (Product Hierarchies)  
+- Marketing Spend Logs (TV, Digital, OOH, Affiliates)  
+- NPS & Calendar Metadata  
+- Weather Reports (via Meteostat API)  
+
+📄 *See* `data.txt` *for data download links.*
+
+---
+
+## 📘 Report
+
+A detailed 60+ page report (`Report.pdf`) covering:
+
+- All visualizations & pre-processing steps  
+- Impact analysis (SHAP + lag features)  
+- Risk modeling framework  
+- Robyn MMM implementation details  
+- Optimization problem formulation  
+- Future strategy via an **Agentic AI System**
+
+---
+
+## 📄 License
+
+This repository is part of a student academic hackathon submission and is available for educational, non-commercial use. For any other use, please contact the contributors.
+
+---
+
+## 👥 Contributors
+
+- **[Your Name]** – Team Lead, Optimization & Modelling  
+- **[Teammate 2]** – Risk Modeling & Data Engineering  
+- **[Teammate 3]** – Robyn MMM Implementation  
+- **[Teammate 4]** – Visualizations, EDA, Report Authoring
+
+---
+
+## 📈 Future Work
+
+- Full agentic automation for campaign adjustment  
+- Incorporate real-time marketing dashboards  
+- Integration with CRM pipelines for ongoing spend adjustment
+
