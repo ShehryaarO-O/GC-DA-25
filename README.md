@@ -31,7 +31,7 @@ This repository presents a comprehensive solution for **optimizing marketing inv
 ## 🛠️ Tech Stack
 
 - **Languages**: Python, R  
-- **Libraries**: Pandas, Numpy, Scipy, Seaborn, SHAP, Catboost, XGBoost, GurobiPy, Robyn  
+- **Libraries**: Pandas, Numpy, Scikit, Scipy, Pingouin, Seaborn, SHAP, Catboost, XGBoost, GurobiPy, Robyn  
 - **Tools**: Jupyter Notebook, Git
 - **APIs**: Meteostat (Weather Integration)
 
@@ -43,7 +43,7 @@ This repository presents a comprehensive solution for **optimizing marketing inv
 
 ---
 
-## 📌 Deliverbales Required in the Problem Statement
+## 📌 Deliverbales Required to be tackled in the Problem Statement
 
 - What drove revenue (Performance Driver Analysis)?
 - How much did each marketing lever contribute (Marketing ROI/Impact Analysis)?
@@ -53,7 +53,7 @@ This repository presents a comprehensive solution for **optimizing marketing inv
 
 ---
 
-## 🧠 Detailed Info about the Approach
+## 🧠 Detailed Info about our approach
 
 NOTE:- Refer `Report.pdf` for more comprehensive idea of our approach.
 
