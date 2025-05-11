@@ -1,7 +1,7 @@
-# 📊 ElectroMart Marketing Optimization – GCDA'25 Hackathon (IIT KGP)
+# 📊 ElectroMart Marketing Optimization – General Championship - Data Analytics'25 - IIT Kharagpur
 
 ## 🏆 Award: Second Runner-Up  
-### 🏁 Organized by: **IIT Kharagpur**  
+### 🏁 Organized by: **Technology Students' Gymkhana IIT Kharagpur**  
 ### 📈 Problem Statement by: **AnalytixLabs**
 
 ---
